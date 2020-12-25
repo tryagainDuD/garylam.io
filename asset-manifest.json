@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/garylam.io/static/css/main.cecb2bc4.chunk.css",
-    "main.js": "/garylam.io/static/js/main.42a3dce6.chunk.js",
-    "main.js.map": "/garylam.io/static/js/main.42a3dce6.chunk.js.map",
+    "main.js": "/garylam.io/static/js/main.9a3a0d0d.chunk.js",
+    "main.js.map": "/garylam.io/static/js/main.9a3a0d0d.chunk.js.map",
     "runtime-main.js": "/garylam.io/static/js/runtime-main.da4a2200.js",
     "runtime-main.js.map": "/garylam.io/static/js/runtime-main.da4a2200.js.map",
     "static/js/2.e0c6d187.chunk.js": "/garylam.io/static/js/2.e0c6d187.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.da4a2200.js",
     "static/js/2.e0c6d187.chunk.js",
     "static/css/main.cecb2bc4.chunk.css",
-    "static/js/main.42a3dce6.chunk.js"
+    "static/js/main.9a3a0d0d.chunk.js"
   ]
 }
