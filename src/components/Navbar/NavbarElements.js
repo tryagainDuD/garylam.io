@@ -61,7 +61,7 @@ export const MobileIcon = styled.div`
         position: absolute;
         right: 0;
         transform: translate(-100%, 50%);
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         cursor: pointer;
     }
 `;
