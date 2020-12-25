@@ -7,6 +7,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body, #root, .App {
+  height: 100%;
+}
+
+body * {
+  font-family: 'Ubuntu';	
+}
+
+.icon {
+  padding-right: 10px;
+}
+
+.cursor {
+  color: rgb(212, 31, 31);
+}
+
+.container-fluid {
+  background: #101111;
+  height: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
