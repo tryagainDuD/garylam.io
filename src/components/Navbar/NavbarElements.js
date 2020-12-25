@@ -5,7 +5,7 @@ import { Link as LinkS } from 'react-scroll'
 export const Nav = styled.nav`
     background: #000;
     height: 100%;
-    width: 100px;
+    width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ export const Nav = styled.nav`
 
     @media screen and (max-width: 768px) {
         transition: 0.1s all ease;
-        height: 100px;
+        height: 80px;
         width: 100%;
     }
 `;
@@ -34,16 +34,16 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-    padding-left: 28px;
+    padding-left: 22px;
     background: linear-gradient(to right, #fff, #029fe8 68%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     cursor: pointer;
-    height: 60px;
-    width: 100px;
+    height: 40px;
+    width: 80px;
     display: flex;
     align-items: center;
-    font: 900 italic 3rem "Teko"; 
+    font: 900 italic 2.4rem "Teko"; 
 
     &:focus, &:hover, &:visited, &:link, &:active {
         text-decoration: none;
@@ -60,8 +60,8 @@ export const MobileIcon = styled.div`
         display: flex;
         position: absolute;
         right: 0;
-        transform: translate(-100%, 50%);
-        font-size: 1.5rem;
+        transform: translate(-100%, 23%);
+        font-size: 1.6rem;
         cursor: pointer;
     }
 `;
@@ -69,7 +69,7 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
     width: 100%;
     height: 70%;
-    padding: 380px 0px 0px 30px;
+    padding: 300px 0px 0px 23px;
     display: block;
     align-items: center;
     list-style: none;
@@ -82,7 +82,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-    height: 60px;
+    height: 50px;
     // border-right: 5px solid aqua;
 `;
 
@@ -93,7 +93,7 @@ export const NavLink = styled(LinkS)`
     height: 100%;
     cursor: pointer;
     font-weight: bold;
-    font-size: 2.0rem;
+    font-size: 1.67rem;
 
     &:hover {
         color: #029fe8;

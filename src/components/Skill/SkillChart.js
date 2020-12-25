@@ -24,13 +24,13 @@ class SkillChart extends Component {
                 responsive: true,
                 maintainAspectRatio: false,
                 tooltips: {
-                    bodyFontSize: 20,
+                    bodyFontSize: 15,
                     bodyFontStyle: 'bold',
                     bodyFontFamily: 'Ubuntu',
-                    footerFontSize: 17,
+                    footerFontSize: 13.5,
                     footerFontFamily: 'Ubuntu',
                     footerSpacing: 7,
-                    footerMarginTop: 12,
+                    footerMarginTop: 10,
                     callbacks: {
                         label: function(tooltipItem, data) {
                             var x = tooltipItem.xLabel
@@ -68,7 +68,7 @@ class SkillChart extends Component {
                             scaleLabel: {
                                 display: true,
                                 labelString: "Understanding & Confidence >",
-                                fontSize: 25,
+                                fontSize: 20,
                                 fontStyle: "bold",
                                 fontFamily: "Ubuntu",
                                 fontColor: "#fff",
@@ -92,7 +92,7 @@ class SkillChart extends Component {
                             scaleLabel: {
                                 display: true,
                                 labelString: "Time >",
-                                fontSize: 25,
+                                fontSize: 20,
                                 fontStyle: "bold",
                                 fontFamily: "Ubuntu",
                                 fontColor: "#fff",

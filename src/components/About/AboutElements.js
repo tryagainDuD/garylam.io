@@ -1,21 +1,21 @@
 import styled from 'styled-components'
 
 export const AboutTitle = styled.div`
-    padding-top: 325px;
+    padding-top: 275px;
     color: #029fe8;
-    font-size: 5.0rem;
+    font-size: 4.0rem;
     font-weight: bold;
 `;
 
 export const AboutContent = styled.div`
     padding-top: 30px;
     padding-bottom: 40px;
-    font: 1.5rem 'Open Sans', sans-serif;
+    font: 1.2rem 'Open Sans', sans-serif;
     color: #fff;
 `;
 
 export const ProgramWrapper = styled.div`
-    padding: 300px 0px 0px 70px;
+    padding: 240px 0px 0px 120px;
 
     @media screen and (max-width: 1500px) {
         display: none;
@@ -28,7 +28,7 @@ export const ProgramWrapper = styled.div`
 
 export const FileName = styled.div`
     padding: 20px 0px 50px 0px;
-    font: bold 2.5rem 'Consolas';
+    font: bold 2rem 'Consolas';
     color: #029fe8;
 
     @media screen and (max-width: 1800px) {
@@ -39,7 +39,7 @@ export const FileName = styled.div`
 export const Code = styled.div`
     padding-bottom: 10px;
     white-space: pre-wrap;
-    font: bold 1.9rem 'Consolas';
+    font: bold 1.5rem 'Consolas';
     color: #a9aaac;
 
     @media screen and (max-width: 1800px) {

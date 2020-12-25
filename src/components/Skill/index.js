@@ -33,7 +33,6 @@ class Skill extends Component {
         // bigSlogan is also for adding the typing animation
         var chartCol = document.getElementById('chart-col')
         var skillText = document.getElementById('skill')
-        var chartContainer = document.getElementById('chart-container')
         var varySpan = document.getElementById('vary-span')
         var skillFlexContainer = document.getElementById('skill-flex-chart-container')
 
@@ -72,7 +71,7 @@ class Skill extends Component {
             chartCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
             skillText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
         }
-        else if (window.matchMedia("(max-width: 1500px)").matches) {
+        if (window.matchMedia("(max-width: 1500px)").matches) {
             chartCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
             skillText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
 
@@ -86,7 +85,7 @@ class Skill extends Component {
             varySpan.innerText = "on the right"
             skillFlexContainer.style.display = "none"
         }
-        else if (window.matchMedia("(min-width: 1200px)")) {
+        else if (window.matchMedia("(min-width: 1200px)").matches) {
             chartCol.className = "col-xs-6 col-sm-6 col-md-6 col-lg-6"
             skillText.className = "col-xs-5 col-sm-5 col-md-5 col-lg-5"
         }

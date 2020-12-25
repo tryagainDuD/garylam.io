@@ -67,11 +67,11 @@ class About extends Component {
                             I'm eager to learn, to gain practical experience from development process, to engage in projects and
                             ultimately, build something that can inspire people a new way to live.
                         </AboutContent>
-                        <Button text="Resume" padding="30px 200px"/>
+                        <Button text="resume" padding="23px 160px"/>
                     </Col>
                     <Col xs={6} sm={6} md={6} lg={6} id="code-col">
                         <ProgramWrapper>
-                            <Typing speed={1} cursorClassName="text-white">
+                            <Typing speed={0} cursorClassName="text-white">
                                 <FileName>MySimpleLife.java</FileName>
                                 <Code>
                                     public static void main(String args[]) <span>{String.fromCharCode(123)}</span><br />

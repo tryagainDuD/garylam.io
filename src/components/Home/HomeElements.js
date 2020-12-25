@@ -14,46 +14,45 @@ const letterFloatIn = keyframes`
 `
 
 export const HomeContent = styled.div`
-    height: 90px;
+    height: 70px;
     color: #fff;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
 
     @media screen and (max-width: 1200px) {
-        height: 80px;
-        font-size: 4.5rem;
+        height: 60px;
+        font-size: 3.5rem;
     }
 `;
 
 export const Slogan = styled.div`
     color: #9C9B9A;
-    font-size: 1.5rem;
-    font: 500 1.5rem "Consolas";
-    padding: 225px 0px 170px 0px;
+    font: 500 1.2rem "Consolas";
+    padding: 185px 0px 140px 0px;
 
     @media screen and (max-width: 1200px) {
         height: 50px;
-        padding-top: 250px;
+        padding-top: 210px;
         font-size: 1.1rem;
     }
 
     @media screen and (max-width: 768px) {
-        padding-top: 250px;
+        padding-top: 210px;
     }
 `;
 
 export const BigSlogan = styled.div`
-    transform: translateX(-120px);
-    padding-top: 100px; 
+    transform: translateX(-100px);
+    padding-top: 90px; 
     color: #029fe8;
-    font-size: 10rem;
+    font-size: 8rem;
     font-style: italic;
     font-weight: bold;
 
     @media screen and (max-width: 1800px) {
         transform: translateX(-20px);
         padding-top: 180px;
-        font-size: 8rem;
+        font-size: 6rem;
     }
 
     @media screen and (max-width: 1500px) {
@@ -66,11 +65,10 @@ export const BigSlogan = styled.div`
 `;
 
 export const Description = styled.div`
-    padding-top: 75px;
-    padding-bottom: 40px;
+    padding-top: 70px;
+    padding-bottom: 30px;
     color: #9C9B9A;
-    font-size: 1.5rem;
-    font: bold italic 1.5rem "Consolas";
+    font: bold italic 1.2rem "Consolas";
 
     @media screen and (max-width: 1200px) {
         font-size: 1.1rem;
@@ -80,12 +78,12 @@ export const Description = styled.div`
 export const SpecialLetter = styled.span`
     display: inline-block;
     padding-right: 12px;
-    font: 900 italic 8rem "Teko";
+    font: 900 italic 7rem "Teko";
     color: #029fe8;
     animation-name: ${letterFloatIn};
     animation-duration: 1s;
 
     @media screen and (max-width: 768px) {
-        font-size: 7rem;
+        font-size: 6.5rem;
     }
 `;

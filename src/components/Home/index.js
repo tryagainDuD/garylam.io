@@ -62,10 +62,10 @@ class Home extends Component {
                             I'm <SpecialLetter>G</SpecialLetter>ary <SpecialLetter>L</SpecialLetter>am
                         </HomeContent>
                         <Description>// Graduated software developer, passion in learning & coding</Description>
-                        <Button text="contact" padding="30px 200px"/>
+                        <Button text="contact" padding="23px 160px"/>
                     </Col>
                     <Col xs={4} sm={4} md={4} lg={4} id="big-slogan-col">
-                        <Typing speed={75} cursorClassName="text-white">
+                        <Typing speed={40} cursorClassName="text-white">
                             <Typing.Delay ms={1000} />
                             <BigSlogan>"BE HUMBLE, BE HUNGRY."</BigSlogan>
                         </Typing>

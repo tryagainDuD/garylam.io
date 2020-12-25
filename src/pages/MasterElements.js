@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ContentContainer = styled.div`
-    margin-left: 100px;
+    margin-left: 80px;
     display: block;
     justify-content: center;
     align-items: center;
