@@ -23,6 +23,10 @@ export const HomeContent = styled.div`
         height: 60px;
         font-size: 3.5rem;
     }
+
+    @media screen and (max-width: 576px) {
+        font-size: 3rem;
+    }
 `;
 
 export const Slogan = styled.div`
@@ -73,6 +77,11 @@ export const Description = styled.div`
     @media screen and (max-width: 1200px) {
         font-size: 1.1rem;
     }
+
+    @media screen and (max-width: 576px) {
+        padding-top: 50px;
+        font-size: 1rem;
+    }
 `;
 
 export const SpecialLetter = styled.span`
@@ -85,5 +94,9 @@ export const SpecialLetter = styled.span`
 
     @media screen and (max-width: 768px) {
         font-size: 6.5rem;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 5.3rem;
     }
 `;
