@@ -25,7 +25,8 @@ export const HomeContent = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        font-size: 3.2rem;
+        height: 55px;
+        font-size: 3rem;
     }
 `;
 
