@@ -25,7 +25,7 @@ export const HomeContent = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        font-size: 3.3rem;
+        font-size: 3.2rem;
     }
 `;
 
@@ -45,6 +45,7 @@ export const Slogan = styled.div`
     }
 
     @media screen and (max-width: 576px) {
+        font-size: 1rem;
         padding-top: 150px;
         padding-bottom: 100px;
     }
@@ -85,7 +86,7 @@ export const Description = styled.div`
 
     @media screen and (max-width: 576px) {
         padding-top: 50px;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 `;
 
