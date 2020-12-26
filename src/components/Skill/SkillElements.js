@@ -81,7 +81,7 @@ export const LegendsContainer = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        margin-bottom: 200px;
+        margin-bottom: 125px;
         padding-right: 30px;
         padding-left: 60px;
     }
@@ -121,6 +121,6 @@ export const DotTitle = styled.span`
     color: #d5d5d6;
 
     @media screen and (max-width: 576px) {
-        font-size: 0.01rem;
+        font-size: 0.1rem;
     }
 `;

@@ -28,6 +28,13 @@ class Skill extends Component {
         this.state = {
             charData: {}
         }
+
+        if (window.matchMedia("(max-width: 576px)").matches) {
+            console.log(1)
+            chartConfigs.axesFontSize = 14;
+            chartConfigs.footerFontSize = 10;
+            chartConfigs.radius = 6;
+        }
     }
 
     componentDidMount() {
@@ -39,11 +46,6 @@ class Skill extends Component {
         var chartContainer = document.getElementById('chart-container')
         var skillFlexContainer = document.getElementById('skill-flex-chart-container')
 
-        if (window.matchMedia("(max-width: 576px)").matches) {
-            chartConfigs.axesFontSize = 14;
-            chartConfigs.footerFontSize = 10;
-            chartConfigs.radius = 6;
-        }
         if (window.matchMedia("(max-width: 768px)").matches) {
             chartCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
             skillText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
