@@ -5,6 +5,11 @@ export const SkillTitle = styled.div`
     color: #029fe8;
     font-size: 4.0rem;
     font-weight: bold;
+
+    @media screen and (max-width: 576px) {
+        padding-top: 120px;
+        font-size: 3.5rem;
+    }
 `;
 
 export const SkillContent = styled.div`
@@ -12,6 +17,10 @@ export const SkillContent = styled.div`
     padding-bottom: 40px;
     font: 1.2rem 'Open Sans', sans-serif;
     color: #fff;
+
+    @media screen and (max-width: 576px) {
+        font-size: 0.9rem;
+    }
 `;
 
 export const Span = styled.span`
@@ -22,6 +31,11 @@ export const PS = styled.div`
     padding-top: 100px;
     font: bold 0.9rem 'Open Sans', sans-serif;
     color: #b6b3b3;
+
+    @media screen and (max-width: 576px) {
+        padding-top: 40px;
+        font-size: 0.7rem;
+    }
 `;
 
 export const ChartContainer = styled.div`
@@ -36,6 +50,11 @@ export const ChartContainer = styled.div`
     @media screen and (max-width: 768px) {
         height: 700px;
         padding: 125px 40px 0px 25px;
+    }
+
+    @media screen and (max-width: 576px) {
+        height: 450px;
+        padding: 30px 40px 0px 25px;
     }
 `;
 
@@ -62,7 +81,7 @@ export const LegendsContainer = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        margin-bottom: 110px;
+        margin-bottom: 220px;
         padding-right: 30px;
         padding-left: 60px;
     }

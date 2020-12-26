@@ -20,11 +20,14 @@ export const Btn = styled.a`
     }
 
     @media screen and (max-width: 768px) {
-        padding: 30px 150px;
+        padding: 24px 150px;
     }
 
     @media screen and (max-width: 576px) {
         font-size: 1rem;
-        padding: 25px 85px;
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 `;
