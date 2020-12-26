@@ -5,6 +5,11 @@ export const AboutTitle = styled.div`
     color: #029fe8;
     font-size: 4.0rem;
     font-weight: bold;
+
+    @media screen and (max-width: 576px) {
+        padding-top: 120px;
+        font-size: 3.5rem;
+    }
 `;
 
 export const AboutContent = styled.div`
@@ -12,6 +17,10 @@ export const AboutContent = styled.div`
     padding-bottom: 40px;
     font: 1.2rem 'Open Sans', sans-serif;
     color: #fff;
+
+    @media screen and (max-width: 576px) {
+        font-size: 0.9rem;
+    }
 `;
 
 export const ProgramWrapper = styled.div`

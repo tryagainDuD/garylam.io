@@ -66,4 +66,8 @@ export const SidebarLink = styled(LinkS)`
         color: #029fe8;
         transition: 0.2 ease-in-out;
     }
+
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
 `;
