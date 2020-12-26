@@ -30,9 +30,8 @@ class Skill extends Component {
         }
 
         if (window.matchMedia("(max-width: 576px)").matches) {
-            console.log(1)
             chartConfigs.axesFontSize = 14;
-            chartConfigs.footerFontSize = 10;
+            chartConfigs.footerFontSize = 9;
             chartConfigs.radius = 6;
         }
     }
