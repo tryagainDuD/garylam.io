@@ -54,7 +54,7 @@ export const ChartContainer = styled.div`
 
     @media screen and (max-width: 576px) {
         height: 350px;
-        padding: 35px 20px 0px 5px;
+        padding: 60px 20px 0px 5px;
     }
 `;
 
