@@ -54,7 +54,7 @@ export const ChartContainer = styled.div`
 
     @media screen and (max-width: 576px) {
         height: 350px;
-        padding: 10px 20px 0px 5px;
+        padding: 35px 20px 0px 5px;
     }
 `;
 
@@ -83,7 +83,7 @@ export const LegendsContainer = styled.div`
     @media screen and (max-width: 576px) {
         margin-bottom: 90px;
         padding-right: 0px;
-        padding-left: 0px;
+        padding-left: 18px;
     }
 
 `;
