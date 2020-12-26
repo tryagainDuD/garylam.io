@@ -54,7 +54,7 @@ export const ChartContainer = styled.div`
 
     @media screen and (max-width: 576px) {
         height: 350px;
-        padding: 30px 40px 0px 0px;
+        padding: 10px 40px 0px 0px;
     }
 `;
 
@@ -81,7 +81,7 @@ export const LegendsContainer = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        margin-bottom: 125px;
+        margin-bottom: 105px;
         padding-right: 30px;
         padding-left: 60px;
     }
@@ -121,6 +121,6 @@ export const DotTitle = styled.span`
     color: #d5d5d6;
 
     @media screen and (max-width: 576px) {
-        font-size: 0.1rem;
+        font-size: 0.5rem;
     }
 `;
