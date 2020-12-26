@@ -65,12 +65,6 @@ class Skill extends Component {
         }
 
         // Defined the functions to resize
-        const handleMinWidth = function(e) {
-            if (e.matches) {
-                chartCol.className = "col-xs-6 col-sm-6 col-md-6 col-lg-6"
-                skillText.className = "col-xs-5 col-sm-5 col-md-5 col-lg-5"
-            }
-        }
         const handleMaxWidth = function(e) {
             if (e.matches) {
                 chartCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
@@ -103,8 +97,7 @@ class Skill extends Component {
                 chart.update()
             }
         }
-
-        window.matchMedia("(min-width: 1200px)").addListener(handleMinWidth);
+        
         window.matchMedia("(max-width: 768px)").addListener(handleMaxWidth);
         window.matchMedia("(max-width: 1200px)").addListener(handleMaxWidth);
         window.matchMedia("(max-width: 1500px)").addListener(handleMaxWidth1500);

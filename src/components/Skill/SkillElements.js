@@ -7,7 +7,7 @@ export const SkillTitle = styled.div`
     font-weight: bold;
 
     @media screen and (max-width: 576px) {
-        padding-top: 120px;
+        padding-top: 100px;
         font-size: 3.5rem;
     }
 `;
