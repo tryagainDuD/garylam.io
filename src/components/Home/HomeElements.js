@@ -25,7 +25,7 @@ export const HomeContent = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        font-size: 3rem;
+        font-size: 3.3rem;
     }
 `;
 
@@ -42,6 +42,11 @@ export const Slogan = styled.div`
 
     @media screen and (max-width: 768px) {
         padding-top: 210px;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding-top: 150px;
+        padding-bottom: 100px;
     }
 `;
 
@@ -97,6 +102,6 @@ export const SpecialLetter = styled.span`
     }
 
     @media screen and (max-width: 576px) {
-        font-size: 5.3rem;
+        font-size: 5.7rem;
     }
 `;
