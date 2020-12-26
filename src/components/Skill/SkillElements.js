@@ -43,8 +43,8 @@ export const ChartContainer = styled.div`
     height: 750px;
     padding: 150px 100px 0px 50px;
 
-    @media screen and (max-width: 1400px) {
-        padding-top: 85px;
+    @media screen and (max-width: 1500px) {
+        padding-top: 120px;
     }
 
     @media screen and (max-width: 768px) {
@@ -53,8 +53,8 @@ export const ChartContainer = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        height: 450px;
-        padding: 30px 40px 0px 25px;
+        height: 350px;
+        padding: 30px 40px 0px 0px;
     }
 `;
 
@@ -81,7 +81,7 @@ export const LegendsContainer = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        margin-bottom: 220px;
+        margin-bottom: 200px;
         padding-right: 30px;
         padding-left: 60px;
     }
@@ -109,10 +109,18 @@ export const ColorBlock = styled.div`
     border-radius: 2px;
     background-color: ${ props => props.color };
     display: inline;
+
+    @media screen and (max-width: 576px) {
+        padding-left: 8px;
+    }
 `;
 
 export const DotTitle = styled.span`
     width: 70px;
     font: bold 0.8rem 'Ubuntu';
     color: #d5d5d6;
+
+    @media screen and (max-width: 576px) {
+        font-size: 0.01rem;
+    }
 `;

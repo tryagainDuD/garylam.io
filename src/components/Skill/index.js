@@ -4,6 +4,7 @@ import {
     Row,
     Col
 } from 'react-bootstrap'
+import { Chart } from 'react-chartjs-2'
 import { 
     SkillTitle,
     SkillContent,
@@ -18,6 +19,7 @@ import {
 } from './SkillElements'
 import SkillChart from './SkillChart'
 import { dotsData } from './Data'
+import { defaultConfigs, chartConfigs } from './ChartConfigs' 
 
 class Skill extends Component {
 
@@ -34,13 +36,44 @@ class Skill extends Component {
         var chartCol = document.getElementById('chart-col')
         var skillText = document.getElementById('skill')
         var varySpan = document.getElementById('vary-span')
+        var chartContainer = document.getElementById('chart-container')
         var skillFlexContainer = document.getElementById('skill-flex-chart-container')
+
+        if (window.matchMedia("(max-width: 576px)").matches) {
+            chartConfigs.axesFontSize = 14;
+            chartConfigs.footerFontSize = 10;
+            chartConfigs.radius = 6;
+        }
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            chartCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
+            skillText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
+        }
+        if (window.matchMedia("(max-width: 1500px)").matches) {
+            chartCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
+            skillText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
+
+            varySpan.innerText = "below"
+            skillFlexContainer.style.display = "block"
+        }
+        else if (window.matchMedia("(min-width: 1500px)").matches) {
+            chartCol.className = "col-xs-6 col-sm-6 col-md-6 col-lg-6"
+            skillText.className = "col-xs-5 col-sm-5 col-md-5 col-lg-5"
+
+            varySpan.innerText = "on the right"
+            skillFlexContainer.style.display = "none"
+        }
 
         // Defined the functions to resize
         const handleMinWidth = function(e) {
             if (e.matches) {
                 chartCol.className = "col-xs-6 col-sm-6 col-md-6 col-lg-6"
                 skillText.className = "col-xs-5 col-sm-5 col-md-5 col-lg-5"
+            }
+        }
+        const handleMaxWidth = function(e) {
+            if (e.matches) {
+                chartCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                skillText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
             }
         }
         const handleMaxWidth1500 = function(e) {
@@ -61,33 +94,13 @@ class Skill extends Component {
                 skillFlexContainer.style.display = "none"
             }
         }
-        const handleMaxWidth = function(e) {
+        const handleMaxWidth576 = function(e) {
             if (e.matches) {
-                chartCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
-                skillText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
+                var chart = new Chart(document.getElementById("skill-chart").getContext("2d"))
+                chart.options.tooltips.footerFontSize = 5
+                chart.data.datasets.radius = 3
+                chart.update()
             }
-        }
-        if (window.matchMedia("(max-width: 768px)").matches) {
-            chartCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
-            skillText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
-        }
-        if (window.matchMedia("(max-width: 1500px)").matches) {
-            chartCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
-            skillText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
-
-            varySpan.innerText = "below"
-            skillFlexContainer.style.display = "block"
-        }
-        else if (window.matchMedia("(min-width: 1500px)").matches) {
-            chartCol.className = "col-xs-6 col-sm-6 col-md-6 col-lg-6"
-            skillText.className = "col-xs-5 col-sm-5 col-md-5 col-lg-5"
-
-            varySpan.innerText = "on the right"
-            skillFlexContainer.style.display = "none"
-        }
-        else if (window.matchMedia("(min-width: 1200px)").matches) {
-            chartCol.className = "col-xs-6 col-sm-6 col-md-6 col-lg-6"
-            skillText.className = "col-xs-5 col-sm-5 col-md-5 col-lg-5"
         }
 
         window.matchMedia("(min-width: 1200px)").addListener(handleMinWidth);
@@ -95,6 +108,16 @@ class Skill extends Component {
         window.matchMedia("(max-width: 1200px)").addListener(handleMaxWidth);
         window.matchMedia("(max-width: 1500px)").addListener(handleMaxWidth1500);
         window.matchMedia("(min-width: 1500px)").addListener(handleMinWidth1500);
+        window.matchMedia("(max-width: 576px)").addListener(handleMaxWidth576);
+    }
+
+    toDefaultChartConfig() {
+        chartConfigs.axesFontSize = defaultConfigs.axesFontSize
+        chartConfigs.bodyFontSize = defaultConfigs.bodyFontSize
+        chartConfigs.footerFontSize = defaultConfigs.footerFontSize
+        chartConfigs.footerSpacing = defaultConfigs.footerSpacing
+        chartConfigs.footerMarginTop = defaultConfigs.footerMarginTop
+        chartConfigs.radius = defaultConfigs.radius
     }
 
     render() {

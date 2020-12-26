@@ -26,7 +26,7 @@ export const dotsData = [
         x: 30,
         y: 76,
         color: "rgb(45, 92, 243)",
-        description: "Believe that I can learn and develop my knowledge quickly on C# and .NET Framework."
+        description: "Believe that I can learn and develop my knowledge quickly on C#."
     },
     {
         title: "C++",

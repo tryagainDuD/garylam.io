@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 import { Bubble } from 'react-chartjs-2'
 import { dotsData } from './Data'
+import { chartConfigs } from './ChartConfigs'
 
 class SkillChart extends Component {
     constructor(props) {
         super(props)
 
         // Define the radius of each dot
-        let radius = 10;
         this.state = {
             data: {
                 datasets: [
                     {
-                        data: this.getDotsXY(radius),
+                        data: this.getDotsXY(chartConfigs.radius),
                         backgroundColor: this.getDotsBg(),
                     }
                 ],
@@ -24,13 +24,13 @@ class SkillChart extends Component {
                 responsive: true,
                 maintainAspectRatio: false,
                 tooltips: {
-                    bodyFontSize: 15,
+                    bodyFontSize: chartConfigs.bodyFontSize,
                     bodyFontStyle: 'bold',
                     bodyFontFamily: 'Ubuntu',
-                    footerFontSize: 13.5,
+                    footerFontSize: chartConfigs.footerFontSize,
                     footerFontFamily: 'Ubuntu',
-                    footerSpacing: 7,
-                    footerMarginTop: 10,
+                    footerSpacing: chartConfigs.footerSpacing,
+                    footerMarginTop: chartConfigs.footerMarginTop,
                     callbacks: {
                         label: function(tooltipItem, data) {
                             var x = tooltipItem.xLabel
@@ -68,7 +68,7 @@ class SkillChart extends Component {
                             scaleLabel: {
                                 display: true,
                                 labelString: "Understanding & Confidence >",
-                                fontSize: 20,
+                                fontSize: chartConfigs.axesFontSize,
                                 fontStyle: "bold",
                                 fontFamily: "Ubuntu",
                                 fontColor: "#fff",
@@ -92,7 +92,7 @@ class SkillChart extends Component {
                             scaleLabel: {
                                 display: true,
                                 labelString: "Time >",
-                                fontSize: 20,
+                                fontSize: chartConfigs.axesFontSize,
                                 fontStyle: "bold",
                                 fontFamily: "Ubuntu",
                                 fontColor: "#fff",
@@ -138,6 +138,7 @@ class SkillChart extends Component {
     render() {
         return (
             <Bubble 
+                id="skill-chart"
                 data={ this.state.data } 
                 options={ this.state.options } />
         )
