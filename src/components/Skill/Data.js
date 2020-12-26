@@ -26,14 +26,14 @@ export const dotsData = [
         x: 30,
         y: 76,
         color: "rgb(45, 92, 243)",
-        description: "Believe that I can learn and develop my knowledge quickly on C#."
+        description: "Able to learn and develop my knowledge quickly on C#."
     },
     {
         title: "C++",
         x: 68,
         y: 62,
         color: "rgba(75, 192, 192, 0.6)",
-        description: "Intermediate level. But I am welcome for any challenges on C++."
+        description: "Intermediate level. \nBut I am welcome for any challenges on C++."
     },
     {
         title: "JavaScript",
@@ -55,8 +55,8 @@ export const dotsData = [
         x: 47,
         y: 63,
         color: "rgb(233, 174, 85)",
-        description: "Basic to Intermediate level. Had experience in create basic web routing \n" + 
-        "and REST API to interact with database server." 
+        description: "Basic to Intermediate level. Had experience in create basic\n" + 
+                        "web routing and REST API to interact with database server." 
     },
     {
         title: "SQL",
@@ -71,8 +71,8 @@ export const dotsData = [
         x: 54,
         y: 75,
         color: "rgb(191, 224, 97)",
-        description: "Had experience in Machine Learning using Python.\n" + 
-                        "Believe that I can learn and develop my knowledge quickly on Python."
+        description: "Had experience in Machine Learning and building simple\n" + 
+                        "games using Python."
     },
     {
         title: "Bootstrap",
@@ -89,11 +89,11 @@ export const dotsData = [
         description: "Knowing the basic syntax & logic operation."
     },
     {
-        title: ".NET",
+        title: "ASP.NET",
         x: 39,
         y: 53,
         color: "rgb(38, 235, 143)",
-        description: "Going to learn further on the powerfulness of .NET Framework." 
+        description: "Had experience in Web Forms, Templates, APIs" 
     },
     {
         title: "Swift",
@@ -108,6 +108,6 @@ export const dotsData = [
         x: 25,
         y: 35,
         color: "rgb(245, 132, 2)",
-        description:  "Had experience in S3 bucket, Cognito & Amplify Auth, AWS API"
+        description:  "Had experience in S3 bucket, Cognito & Amplify Auth, AWS API."
     }
 ]
