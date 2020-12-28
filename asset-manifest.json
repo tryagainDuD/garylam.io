@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/garylam.io/static/css/main.eb29ed3f.chunk.css",
-    "main.js": "/garylam.io/static/js/main.7cbd835a.chunk.js",
-    "main.js.map": "/garylam.io/static/js/main.7cbd835a.chunk.js.map",
+    "main.js": "/garylam.io/static/js/main.1cbc5bb3.chunk.js",
+    "main.js.map": "/garylam.io/static/js/main.1cbc5bb3.chunk.js.map",
     "runtime-main.js": "/garylam.io/static/js/runtime-main.da4a2200.js",
     "runtime-main.js.map": "/garylam.io/static/js/runtime-main.da4a2200.js.map",
-    "static/js/2.243b8a5a.chunk.js": "/garylam.io/static/js/2.243b8a5a.chunk.js",
-    "static/js/2.243b8a5a.chunk.js.map": "/garylam.io/static/js/2.243b8a5a.chunk.js.map",
+    "static/js/2.4f0de945.chunk.js": "/garylam.io/static/js/2.4f0de945.chunk.js",
+    "static/js/2.4f0de945.chunk.js.map": "/garylam.io/static/js/2.4f0de945.chunk.js.map",
     "static/js/3.041e2ce4.chunk.js": "/garylam.io/static/js/3.041e2ce4.chunk.js",
     "static/js/3.041e2ce4.chunk.js.map": "/garylam.io/static/js/3.041e2ce4.chunk.js.map",
     "index.html": "/garylam.io/index.html",
+    "lamy.mp4": "/garylam.io/lamy.mp4",
+    "shirakami_fubuki.mp4": "/garylam.io/shirakami_fubuki.mp4",
     "static/css/main.eb29ed3f.chunk.css.map": "/garylam.io/static/css/main.eb29ed3f.chunk.css.map",
-    "static/js/2.243b8a5a.chunk.js.LICENSE.txt": "/garylam.io/static/js/2.243b8a5a.chunk.js.LICENSE.txt"
+    "static/js/2.4f0de945.chunk.js.LICENSE.txt": "/garylam.io/static/js/2.4f0de945.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.da4a2200.js",
-    "static/js/2.243b8a5a.chunk.js",
+    "static/js/2.4f0de945.chunk.js",
     "static/css/main.eb29ed3f.chunk.css",
-    "static/js/main.7cbd835a.chunk.js"
+    "static/js/main.1cbc5bb3.chunk.js"
   ]
 }
