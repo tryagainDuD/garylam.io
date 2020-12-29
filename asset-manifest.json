@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/garylam.io/static/css/main.eb29ed3f.chunk.css",
-    "main.js": "/garylam.io/static/js/main.1cbc5bb3.chunk.js",
-    "main.js.map": "/garylam.io/static/js/main.1cbc5bb3.chunk.js.map",
+    "main.css": "/garylam.io/static/css/main.58dc24f1.chunk.css",
+    "main.js": "/garylam.io/static/js/main.ec7739de.chunk.js",
+    "main.js.map": "/garylam.io/static/js/main.ec7739de.chunk.js.map",
     "runtime-main.js": "/garylam.io/static/js/runtime-main.da4a2200.js",
     "runtime-main.js.map": "/garylam.io/static/js/runtime-main.da4a2200.js.map",
     "static/js/2.4f0de945.chunk.js": "/garylam.io/static/js/2.4f0de945.chunk.js",
@@ -12,13 +12,13 @@
     "index.html": "/garylam.io/index.html",
     "lamy.mp4": "/garylam.io/lamy.mp4",
     "shirakami_fubuki.mp4": "/garylam.io/shirakami_fubuki.mp4",
-    "static/css/main.eb29ed3f.chunk.css.map": "/garylam.io/static/css/main.eb29ed3f.chunk.css.map",
+    "static/css/main.58dc24f1.chunk.css.map": "/garylam.io/static/css/main.58dc24f1.chunk.css.map",
     "static/js/2.4f0de945.chunk.js.LICENSE.txt": "/garylam.io/static/js/2.4f0de945.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.da4a2200.js",
     "static/js/2.4f0de945.chunk.js",
-    "static/css/main.eb29ed3f.chunk.css",
-    "static/js/main.1cbc5bb3.chunk.js"
+    "static/css/main.58dc24f1.chunk.css",
+    "static/js/main.ec7739de.chunk.js"
   ]
 }
