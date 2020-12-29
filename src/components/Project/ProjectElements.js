@@ -26,7 +26,7 @@ export const ProjectTitle = styled.div`
 export const ProjectSmallTitle = styled.div`
     padding-top: 40px;
     padding-bottom: 8px;
-    font: bold 2rem 'Open Sans', sans-serif;
+    font: bold italic 2rem 'Open Sans', sans-serif;
     color: #fff;
     display: block;
 
@@ -35,8 +35,9 @@ export const ProjectSmallTitle = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        font-size: 1.1rem;
-        padding-top: 28px;
+        font-size: 1.0rem;
+        padding-top: 25px;
+        padding-bottom: 0px;
     }
 `
 
@@ -127,6 +128,7 @@ export const ProjectVideoContainer = styled.div`
     }
 
     @media screen and (max-width: 855px) {
+        max-height: 250px;
         width: 100%;
         height: 100%;
     }
@@ -143,8 +145,8 @@ export const ProjectVideoBg = styled.video`
     }
 
     @media screen and (max-width: 855px) {
-        width: 100%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
     }
 
 `

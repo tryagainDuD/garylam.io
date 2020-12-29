@@ -35,6 +35,37 @@ class Project extends Component {
         arrayElements[0].className += ' active-index';
         var projectContainers = document.getElementsByClassName('project-container')
         projectContainers[0].style.display = 'block'
+
+        // Resize
+        var emptyCol = document.getElementById('project-empty-col')
+        var projectContentCol = document.getElementById('project-content')
+        
+        if (window.matchMedia("(max-width: 576px)").matches) {
+            emptyCol.className = ""
+            projectContentCol.className = "col"
+        } 
+        else if (window.matchMedia("(min-width: 576px)").matches) {
+            emptyCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
+            projectContentCol.className = "col-xs-11 col-sm-11 col-md-11 col-lg-11"
+        }
+
+        const handleMaxWidth = function(e) {
+            if (e.matches) {
+                emptyCol.className = ""
+                projectContentCol.className = "col"
+            }
+        }
+
+        const handleMinWidth = function(e) {
+            if (e.matches) {
+                emptyCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
+                projectContentCol.className = "col-xs-11 col-sm-11 col-md-11 col-lg-11"
+            }
+        }
+
+        window.matchMedia("(max-width: 576px)").addListener(handleMaxWidth);
+        window.matchMedia("(min-width: 576px)").addListener(handleMinWidth);
+
     }
 
     render() {
@@ -105,7 +136,8 @@ class Project extends Component {
         return (
             <Container fluid id="project-container">
                 <Row>
-                    <Col id="project-text">
+                    <Col xs={1} sm={1} md={1} lg={1} id="project-empty-col"></Col>
+                    <Col xs={11} sm={11} md={11} lg={11} id="project-content">
                         <ProjectTitle>Project</ProjectTitle>
                         <ArrayBarContainer id="array-bar-container">
                             <SquareBracket isLeftBracket={this.state.isLeftBracket}>[</SquareBracket>
