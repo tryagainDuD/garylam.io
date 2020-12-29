@@ -17,7 +17,7 @@ export const ProjectTitle = styled.div`
         font-size: 3.5rem;
     }
 
-    @media screen and (max-width: 1460px) {
+    @media screen and (max-width: 1540px) {
         padding-top: 80px;
     }
 `;
@@ -25,12 +25,12 @@ export const ProjectTitle = styled.div`
 export const ProjectSmallTitle = styled.div`
     padding-top: 40px;
     padding-bottom: 8px;
-    font: 2rem 'Open Sans', sans-serif;
+    font: bold 2rem 'Open Sans', sans-serif;
     color: #fff;
     display: block;
 
-    @media screen and (max-width: 576px) {
-        font-size: 1.6rem;
+    @media screen and (max-width: 855px) {
+        font-size: 1.3rem;
     }
 `
 
@@ -42,15 +42,15 @@ export const ProjectContent = styled.div`
     display: inline;
     float: left;
 
-    @media screen and (max-width: 576px) {
-        font-size: 0.9rem;
+    @media screen and (max-width: 1540px) {
+        width: 100%;
+        display: block;
     }
 
-    @media screen and (max-width: 1460px) {
-        width: 90%;
-        display: block;
-        margin-bottom: 40px;
+    @media screen and (max-width: 855px) {
+        font-size: 1.0rem;
     }
+
 `;
 
 export const ArrayBarContainer = styled.div`
@@ -96,15 +96,21 @@ export const Comma = styled.span`
 
 export const ProjectVideoContainer = styled.div`
     display: inline-block;
-    padding-left: 230px;
+    padding-left: 200px;
 
     @media screen and (max-width: 1640px) {
         padding-left: 130px;
     }
 
-    @media screen and (max-width: 1460px) {
+    @media screen and (max-width: 1540px) {
         display: block;
         padding-left: 0px;
+        padding-bottom: 50px;
+    }
+
+    @media screen and (max-width: 855px) {
+        width: 100%;
+        height: 100%;
     }
 `
 
@@ -112,9 +118,15 @@ export const ProjectVideoBg = styled.video`
     -o-object-fit: cover;
     object-fit: cover;
     background: #fff;
-    transform: translateY(-65px)
+    transform: translateY(-65px);
 
-    @media screen and (max-width: 1460px) {
-        transform: translateY(65px);
+    @media screen and (max-width: 1540px) {
+        transform: translateY(30px);
     }
+
+    @media screen and (max-width: 855px) {
+        width: 100%;
+        height: 100%;
+    }
+
 `
