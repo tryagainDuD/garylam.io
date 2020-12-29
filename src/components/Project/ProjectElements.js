@@ -12,13 +12,13 @@ export const ProjectTitle = styled.div`
     font-size: 4.0rem;
     font-weight: bold;
 
-    @media screen and (max-width: 576px) {
-        padding-top: 100px;
-        font-size: 3.5rem;
-    }
-
     @media screen and (max-width: 1540px) {
         padding-top: 80px;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding-top: 50px;
+        font-size: 3.5rem;
     }
 `;
 
@@ -31,6 +31,10 @@ export const ProjectSmallTitle = styled.div`
 
     @media screen and (max-width: 855px) {
         font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 1.2rem;
     }
 `
 
@@ -51,6 +55,10 @@ export const ProjectContent = styled.div`
         font-size: 1.0rem;
     }
 
+    @media screen and (max-width: 576px) {
+        font-size: 0.9rem;
+    }
+
 `;
 
 export const ArrayBarContainer = styled.div`
@@ -67,6 +75,10 @@ export const SquareBracket = styled.div`
         if (props.isLeftBracket) { return '0px 20px 0px 0px' }
         else { return '0px 0px 0px 20px' }
     }};
+
+    @media screen and (max-width: 576px) {
+        font-size: 1.5rem;
+    }
 `
 
 export const ArrayIndex = styled.a`
@@ -83,6 +95,10 @@ export const ArrayIndex = styled.a`
         text-decoration: none;
         background-color: #029fe8; 
         transition: 0.1s ease-in-out;
+    }
+
+    @media screen and (max-width: 576px) {
+        font-size: 1.5rem;
     }
 
 `
