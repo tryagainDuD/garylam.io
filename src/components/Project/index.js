@@ -97,7 +97,7 @@ class Project extends Component {
                 <ProjectSmallTitle>{ project.title }</ProjectSmallTitle>
                 <ProjectContent>{ project.description }</ProjectContent>
                 <ProjectVideoContainer>
-                    <ProjectVideoBg autoPlay loop muted src={ project.src } type="video/mp4" />
+                    <ProjectVideoBg autoPlay playsinline loop muted src={ project.src } type="video/mp4" />
                 </ProjectVideoContainer>
             </ProjectContainer>
         );
@@ -105,8 +105,7 @@ class Project extends Component {
         return (
             <Container fluid id="project-container">
                 <Row>
-                    <Col xs={1} sm={1} md={1} lg={1}></Col>
-                    <Col xs={11} sm={11} md={11} lg={11} id="project-text">
+                    <Col id="project-text">
                         <ProjectTitle>Project</ProjectTitle>
                         <ArrayBarContainer id="array-bar-container">
                             <SquareBracket isLeftBracket={this.state.isLeftBracket}>[</SquareBracket>

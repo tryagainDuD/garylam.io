@@ -17,7 +17,8 @@ export const ProjectTitle = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        padding-top: 50px;
+        padding-top: 0px;
+        margin-bottom: 0px;
         font-size: 3.5rem;
     }
 `;
@@ -34,7 +35,8 @@ export const ProjectSmallTitle = styled.div`
     }
 
     @media screen and (max-width: 576px) {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        padding-top: 28px;
     }
 `
 
