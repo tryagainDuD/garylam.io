@@ -124,7 +124,6 @@ export const ProjectVideoContainer = styled.div`
     @media screen and (max-width: 1540px) {
         display: block;
         padding-left: 0px;
-        padding-bottom: 50px;
     }
 
     @media screen and (max-width: 855px) {

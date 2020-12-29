@@ -128,7 +128,7 @@ class Project extends Component {
                 <ProjectSmallTitle>{ project.title }</ProjectSmallTitle>
                 <ProjectContent>{ project.description }</ProjectContent>
                 <ProjectVideoContainer>
-                    <ProjectVideoBg autoPlay playsinline loop muted src={ project.src } type="video/mp4" />
+                    <ProjectVideoBg autoPlay playsInline loop muted src={ project.src } type="video/mp4" />
                 </ProjectVideoContainer>
             </ProjectContainer>
         );
