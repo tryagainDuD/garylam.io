@@ -77,3 +77,13 @@
     from { bottom: -100%; }
     to { bottom: 100%; } 
 }
+
+/* Project index effect */
+.active-index {
+    text-decoration: none;
+    color: #fff !important;
+    background-color: #029fe8; 
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    transition: 0.3s ease-in-out;
+}

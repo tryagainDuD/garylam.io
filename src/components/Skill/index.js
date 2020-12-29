@@ -42,7 +42,6 @@ class Skill extends Component {
         var chartCol = document.getElementById('chart-col')
         var skillText = document.getElementById('skill')
         var varySpan = document.getElementById('vary-span')
-        var chartContainer = document.getElementById('chart-container')
         var skillFlexContainer = document.getElementById('skill-flex-chart-container')
 
         if (window.matchMedia("(max-width: 768px)").matches) {
@@ -117,12 +116,12 @@ class Skill extends Component {
     render() {
 
         const legend = dotsData.map((dot) => 
-            <Legend>
+            <Legend key={dot.title}>
                 <ColorBlock color={ dot.color } />
                 <DotTitle>{ dot.title }</DotTitle>
             </Legend>
         );
-
+        
         return (
             <>
                 <Container fluid id="skill-container">
