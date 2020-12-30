@@ -41,4 +41,8 @@ code {
   #chart-container {
     display: none;
   }
+
+  #project-container {
+    padding-right: 0px;
+  }
 }
