@@ -5,6 +5,7 @@ export const AboutTitle = styled.div`
     color: #029fe8;
     font-size: 4.0rem;
     font-weight: bold;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 576px) {
         padding-top: 100px;
@@ -17,6 +18,7 @@ export const AboutContent = styled.div`
     padding-bottom: 40px;
     font: 1.2rem 'Open Sans', sans-serif;
     color: #fff;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 576px) {
         font-size: 0.9rem;

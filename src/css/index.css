@@ -20,7 +20,12 @@ body * {
 }
 
 .cursor {
-  color: rgb(212, 31, 31);
+  color: #292929;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 .container-fluid {
@@ -28,13 +33,30 @@ body * {
   height: 100%;
 }
 
+#skill-chart {
+  transition: 0.3s ease-in-out;
+}
+
 #project-container {
   padding-right: 125px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#contact-container {
+  padding-right: 125px;
+}
+
+#contact-content {
+  padding-right: 100px;
+}
+
+#send-btn {
+  float: right !important;
+}
+
+@media screen and (max-width: 1055px) {
+  #contact-content {
+    padding-right: 15px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -45,4 +67,21 @@ code {
   #project-container {
     padding-right: 20px;
   }
+
+  #contact-content {
+    padding-right: 20px;
+  }
+
+  #contact-container {
+    padding-right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 382px) {
+
+  #contact-content {
+    padding-right: 0px;
+  }
+
 }

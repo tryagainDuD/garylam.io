@@ -11,6 +11,7 @@ export const ProjectTitle = styled.div`
     color: #029fe8;
     font-size: 4.0rem;
     font-weight: bold;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 1540px) {
         padding-top: 80px;
@@ -29,6 +30,7 @@ export const ProjectSmallTitle = styled.div`
     font: bold italic 2rem 'Open Sans', sans-serif;
     color: #fff;
     display: block;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 855px) {
         font-size: 1.3rem;
@@ -48,6 +50,7 @@ export const ProjectContent = styled.div`
     color: #fff;
     display: inline;
     float: left;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 1540px) {
         width: 100%;
@@ -78,6 +81,7 @@ export const SquareBracket = styled.div`
         if (props.isLeftBracket) { return '0px 20px 0px 0px' }
         else { return '0px 0px 0px 20px' }
     }};
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 576px) {
         font-size: 1.5rem;
@@ -111,6 +115,7 @@ export const Comma = styled.span`
     padding-right: 10px;
     padding-left: 10px;
     cursor: default;
+    transition: 0.3s ease-in-out;
 `
 
 export const ProjectVideoContainer = styled.div`
@@ -118,6 +123,7 @@ export const ProjectVideoContainer = styled.div`
     padding-left: 140px;
     width: 60%;
     height: 50%;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 1640px) {
         padding-left: 130px;
@@ -142,6 +148,7 @@ export const ProjectVideoBg = styled.video`
     transform: translateY(-75px);
     width: 100%;
     height: 100%;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 1540px) {
         transform: translateY(30px);

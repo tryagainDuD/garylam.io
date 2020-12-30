@@ -18,6 +18,7 @@ export const HomeContent = styled.div`
     color: #fff;
     font-size: 4rem;
     font-weight: bold;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 1200px) {
         height: 60px;
@@ -34,6 +35,7 @@ export const Slogan = styled.div`
     color: #9C9B9A;
     font: 500 1.2rem "Consolas";
     padding: 185px 0px 140px 0px;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 1200px) {
         height: 50px;
@@ -80,6 +82,7 @@ export const Description = styled.div`
     padding-bottom: 30px;
     color: #9C9B9A;
     font: bold italic 1.2rem "Consolas";
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 1200px) {
         font-size: 1.1rem;
@@ -98,6 +101,7 @@ export const SpecialLetter = styled.span`
     color: #029fe8;
     animation-name: ${letterFloatIn};
     animation-duration: 1s;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 768px) {
         font-size: 6.5rem;

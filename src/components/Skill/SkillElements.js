@@ -5,6 +5,7 @@ export const SkillTitle = styled.div`
     color: #029fe8;
     font-size: 4.0rem;
     font-weight: bold;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 576px) {
         padding-top: 100px;
@@ -17,6 +18,7 @@ export const SkillContent = styled.div`
     padding-bottom: 40px;
     font: 1.2rem 'Open Sans', sans-serif;
     color: #fff;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 576px) {
         font-size: 0.9rem;
@@ -64,6 +66,7 @@ export const LegendsContainer = styled.div`
     margin-bottom: 50px;
     height: 50px;
     font-family: 'Open Sans', sans-serif;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 1750px) {
         padding-right: 0px;
@@ -100,6 +103,7 @@ export const Legends = styled.ul`
 export const Legend = styled.li`
     height: 30px;
     margin-right: 10px;
+    transition: 0.3s ease-in-out;
 `;
 
 export const ColorBlock = styled.div`
@@ -109,6 +113,7 @@ export const ColorBlock = styled.div`
     border-radius: 2px;
     background-color: ${ props => props.color };
     display: inline;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 576px) {
         padding-left: 8px;
@@ -119,6 +124,7 @@ export const DotTitle = styled.span`
     width: 70px;
     font: bold 0.8rem 'Ubuntu';
     color: #d5d5d6;
+    transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 576px) {
         font-size: 0.5rem;

@@ -53,7 +53,7 @@ class About extends Component {
         return (
             <Container fluid>
                 <Row>
-                    <Col xs={1} sm={1} md={1} lg={1}></Col>
+                    <Col xs={1} sm={1} md={1} lg={1} />
                     <Col xs={5} sm={5} md={5} lg={5} id="about">
                         <AboutTitle>About Me</AboutTitle>
                         <AboutContent>
@@ -67,7 +67,7 @@ class About extends Component {
                             I'm eager to learn, to gain practical experience from development process, to engage in projects and
                             ultimately, build something that can inspire people a new way to live.
                         </AboutContent>
-                        <Button text="resume" padding="23px 160px"/>
+                        <Button text={"resume"} padding={"23px 160px"} />
                     </Col>
                     <Col xs={6} sm={6} md={6} lg={6} id="code-col">
                         <ProgramWrapper>

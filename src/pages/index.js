@@ -5,6 +5,7 @@ import Home from '../components/Home'
 import About from '../components/About'
 import Skill from '../components/Skill'
 import Project from '../components/Project'
+import Contact from '../components/Contact'
 import { ContentContainer } from './MasterElements'
 
 const Master = () => {
@@ -26,6 +27,7 @@ const Master = () => {
                 <About />
                 <Skill />
                 <Project />
+                <Contact />
             </ContentContainer>
         </>
     )
