@@ -28,6 +28,10 @@ body * {
   height: 100%;
 }
 
+#project-container {
+  padding-right: 125px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -115,7 +115,9 @@ export const Comma = styled.span`
 
 export const ProjectVideoContainer = styled.div`
     display: inline-block;
-    padding-left: 200px;
+    padding-left: 140px;
+    width: 60%;
+    height: 50%;
 
     @media screen and (max-width: 1640px) {
         padding-left: 130px;
@@ -126,26 +128,18 @@ export const ProjectVideoContainer = styled.div`
         padding-left: 0px;
     }
 
-    @media screen and (max-width: 855px) {
-        max-height: 250px;
-        width: 100%;
-        height: 100%;
-    }
 `
 
 export const ProjectVideoBg = styled.video`
     -o-object-fit: cover;
     object-fit: cover;
     background: #fff;
-    transform: translateY(-65px);
+    transform: translateY(-75px);
+    width: 100%;
+    height: 100%;
 
     @media screen and (max-width: 1540px) {
         transform: translateY(30px);
-    }
-
-    @media screen and (max-width: 855px) {
-        width: 90%;
-        height: 90%;
     }
 
 `

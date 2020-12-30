@@ -19,6 +19,7 @@ import {
 import { projectData } from './Data'
 import FBK from '../../videos/shirakami_fubuki.mp4'
 import Lamy from '../../videos/lamy.mp4'
+import EDMSDemo from '../../videos/edms-demo.mp4'
 
 class Project extends Component {
 
