@@ -128,6 +128,11 @@ export const ProjectVideoContainer = styled.div`
         padding-left: 0px;
     }
 
+    @media screen and (max-width: 1000px) {
+        width: 90%;
+        height: 80%;
+    }
+
 `
 
 export const ProjectVideoBg = styled.video`
