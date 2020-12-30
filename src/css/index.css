@@ -55,7 +55,7 @@ code {
 
 @media screen and (max-width: 1055px) {
   #contact-content {
-    padding-right: 15px;
+    padding-right: 20px;
   }
 }
 
@@ -68,20 +68,12 @@ code {
     padding-right: 20px;
   }
 
-  #contact-content {
-    padding-right: 20px;
-  }
-
   #contact-container {
     padding-right: 20px;
   }
 
 }
-
+/* 
 @media screen and (max-width: 382px) {
 
-  #contact-content {
-    padding-right: 0px;
-  }
-
-}
+} */

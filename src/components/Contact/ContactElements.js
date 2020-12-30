@@ -8,7 +8,7 @@ export const ContactTitle = styled.div`
     transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 630px) {
-        padding-top: 100px;
+        padding-top: 50px;
         font-size: 3.5rem;
     }
 `;
