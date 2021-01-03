@@ -48,7 +48,12 @@ export const ContactText = styled.div`
 `;
 
 export const EmailForm = styled.form`
-    height: 90%
+    height: 90%;
+
+    @media screen and (max-width: 630px) {
+        height: 75%;
+    }
+
 `
 
 export const SendingModalContent = styled.div`
