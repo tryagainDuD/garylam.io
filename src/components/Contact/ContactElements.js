@@ -23,7 +23,7 @@ const popup = keyframes`
 `
 
 export const ContactTitle = styled.div`
-    padding-top: 125px;
+    padding-top: 110px;
     color: #029fe8;
     font-size: 4.0rem;
     font-weight: bold;
@@ -48,10 +48,10 @@ export const ContactText = styled.div`
 `;
 
 export const EmailForm = styled.form`
-    height: 90%;
+    height: 70%;
 
-    @media screen and (max-width: 630px) {
-        height: 75%;
+    @media screen and (max-width: 768px) {
+        height: 65%;
     }
 
 `
