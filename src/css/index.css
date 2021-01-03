@@ -20,7 +20,7 @@ body * {
 }
 
 .cursor {
-  color: #292929;
+  color: #cc0a0a;
 }
 
 code {
@@ -28,6 +28,7 @@ code {
     monospace;
 }
 
+/* Page CSS */
 .container-fluid {
   background: #101111;
   height: 100%;
@@ -49,8 +50,20 @@ code {
   padding-right: 100px;
 }
 
-#send-btn {
-  float: right !important;
+.error-input {
+  border-bottom: 3px solid #cc0a0a !important;
+}
+
+#modal-body {
+  background-color: #101111;
+  min-width: 500px;
+  min-height: 82px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover {
+  -webkit-box-shadow: 0 0 0 100px #292929 inset !important;
+  transition: 0s;
 }
 
 @media screen and (max-width: 1055px) {

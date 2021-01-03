@@ -1,18 +1,93 @@
 import React, { Component } from 'react'
+import * as EmailValidator from 'email-validator'
+import emailjs from 'emailjs-com'
 import {
     Container,
     Row,
-    Col
+    Col,
 } from 'react-bootstrap'
 import {
     ContactTitle,
     ContactText,
+    EmailForm,
     SendBtnContainer
 } from './ContactElements'
 import { Input, TextArea } from '../Input/InputElements'
+import SendingModal from './SendingModal'
 import Button from '../Button'
+import { EmailJsData } from './Data'
 
 class Contact extends Component {
+
+    constructor() {
+        super()
+        this.state = {
+            firstLoad: true,
+            showModal: false,
+            sent: false,
+            name: "",
+            email: "",
+            subject: "",
+            message: ""
+        }
+    }
+
+    onInputChanged = event => {
+        this.setState({
+            [event.target.id]: event.target.value
+        })
+    }
+
+    inputClass = id => {
+        var input = document.getElementById(id)
+        if (this.state.firstLoad) {
+            if (id === "email" && this.state.email !== "" && !EmailValidator.validate(this.state.email)) 
+                return "error-input"
+            return ""
+        }
+        if (input.value === "" || (id === "email" && !EmailValidator.validate(input.value))) 
+            return "error-input"
+        else return ""
+    }
+
+    sendEmail = event => {
+        this.setState({ firstLoad: false })
+        // If there is error input in the form, reject send email request
+        if (document.getElementsByClassName('error-input').length > 0) {
+            // Since the user hits the send button and it fails, the wrong input red bottom border can be shown
+
+            // Shaking animation
+            document.getElementById("send-btn").animate([
+                { transform: 'translateX(-3px)' },
+                { transform: 'translateX(6px)' },
+                { transform: 'translateX(-6px)' },
+                { transform: 'translateX(6px)' },
+                { transform: 'translateX(-6px)' },
+                { transform: 'translateX(6px)' },
+            ], { duration: 250 })
+
+            return
+        }
+
+        // Show the sending modal
+        this.setState({ showModal: true })
+        let form = document.getElementById('email-form')
+        let SERVICE_ID = EmailJsData.serviceID
+        let TEMPLATE_ID = EmailJsData.templateID
+        let USER_ID = EmailJsData.userID
+
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form, USER_ID)
+            .then((result) => {
+                this.setState({ sent: true })
+                setTimeout(() => {
+                    this.setState({
+                        showModal: false
+                    })
+                }, 1500)
+            }, (error) => {
+                console.log(error.text);
+            })
+    }
 
     componentDidMount() {
         // Resize
@@ -44,6 +119,10 @@ class Contact extends Component {
 
         window.matchMedia("(max-width: 576px)").addListener(handleMaxWidth);
         window.matchMedia("(min-width: 576px)").addListener(handleMinWidth);
+
+        // Add Send button click event listener
+        document.getElementById("send-btn").addEventListener("click", this.sendEmail)
+
     }
 
     render() {
@@ -57,15 +136,22 @@ class Contact extends Component {
                             I'm interested in any opportunites related to software development.
                             If you have any enquiries or questions, please contact me by the form below.
                         </ContactText>
-                        <Input placeholder={"Name"} width={"40%"} />
-                            <Input placeholder={"Email"} width={"57%"} float={"right"} />
-                        <Input placeholder={"Subject"} width={"100%"} />
-                        <TextArea placeholder={"Message"} width={"100%"} height={"40%"} display={"block"} />
-                        <SendBtnContainer>
-                            <Button text={"send"} padding={"23px 160px"} float={"right"} />
-                        </SendBtnContainer>
+                        <EmailForm id="email-form" style={{height: 90 + '%'}}>
+                            <Input id="name" name="name" className={this.inputClass("name")} placeholder={"Name"} 
+                                width={"40%"} onChange={this.onInputChanged} />
+                            <Input id="email" name="email" className={this.inputClass("email")} placeholder={"Email"}
+                                width={"57%"} float={"right"} onChange={this.onInputChanged} />
+                            <Input id="subject" name="subject" className={this.inputClass("subject")} placeholder={"Subject"}
+                                width={"100%"} onChange={this.onInputChanged} />
+                            <TextArea id="message" name="message" className={this.inputClass("message")} placeholder={"Message"} width={"100%"} 
+                                height={"40%"} display={"block"} onChange={this.onInputChanged} />
+                            <SendBtnContainer>
+                                <Button id={"send-btn"} text={"send"} padding={"23px 160px"} float={"right"} />
+                            </SendBtnContainer>
+                        </EmailForm>
                     </Col>
                 </Row>
+                <SendingModal show={this.state.showModal} sent={this.state.sent}/>
             </Container>
         )
     }

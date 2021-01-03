@@ -1,9 +1,9 @@
 import React from 'react'
 import { Btn } from './ButtonElements'
 
-const Button = ({ text, padding }) => {
+const Button = ({ id, text, padding }) => {
     return (
-        <Btn className="special-btn" padding={ padding }>
+        <Btn id={ id } className="special-btn" padding={ padding } >
             <span />
             <span />
             <span />

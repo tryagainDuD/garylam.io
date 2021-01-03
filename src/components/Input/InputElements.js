@@ -9,6 +9,8 @@ export const Input = styled.input`
     margin-bottom: 20px;
     float: ${ props => props.float };
     color: #b6b3b3;
+    -webkit-text-fill-color: #b6b3b3;
+    -webkit-box-shadow: 0 0 0 100px #292929 inset !important;
     border: none;
     border-bottom: 3px solid #b6b3b3;
     font-size: 1.5rem;
@@ -19,6 +21,7 @@ export const Input = styled.input`
         border-bottom: 3px solid #029fe8;
         outline: none;
         color: #029fe8;
+        -webkit-text-fill-color: #029fe8;
     }
 
     @media screen and (max-width: 1055px) {
@@ -37,6 +40,7 @@ export const TextArea = styled.textarea`
     width: ${ props => props.width };
     height: ${ props => props.height };
     color: #b6b3b3;
+    -webkit-text-fill-color: #b6b3b3;
     border: none;
     border-bottom: 3px solid #b6b3b3;
     font-size: 1.5rem;
@@ -48,6 +52,7 @@ export const TextArea = styled.textarea`
         border-bottom: 3px solid #1eb1f5;
         outline: none;
         color: #029fe8;
+        -webkit-text-fill-color: #029fe8;
     }
 
     @media screen and (max-width: 1055px) {
