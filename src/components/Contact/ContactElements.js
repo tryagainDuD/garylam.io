@@ -48,12 +48,7 @@ export const ContactText = styled.div`
 `;
 
 export const EmailForm = styled.form`
-    height: 70%;
-
-    @media screen and (max-width: 768px) {
-        height: 65%;
-    }
-
+    height: 65%;
 `
 
 export const SendingModalContent = styled.div`
@@ -81,6 +76,7 @@ export const SendingText = styled.span`
     padding-left: 20px;
     margin-right: 3px;
 `
+
 export const SentText = styled.span`
     color: #029fe8;
     font-size: 2.0rem;

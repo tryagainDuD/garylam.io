@@ -13,3 +13,8 @@ export const ContentContainer = styled.div`
         margin-left: 0px;
     }
 `;
+
+export const BlankArea = styled.div`
+    width: 100%;
+    height: 150px;
+`

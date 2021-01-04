@@ -1,6 +1,5 @@
 import React from 'react'
 import { Modal, ModalBody } from 'react-bootstrap'
-import ModalHeader from 'react-bootstrap/esm/ModalHeader'
 import {
     SendingModalContent,
     SentModalContent,

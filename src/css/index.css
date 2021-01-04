@@ -20,7 +20,7 @@ body * {
 }
 
 .cursor {
-  color: #cc0a0a;
+  color: #6f0285;
 }
 
 code {
@@ -32,6 +32,11 @@ code {
 .container-fluid {
   background: #101111;
   height: 100%;
+}
+
+.active {
+  border-right: 2px solid #029fe8;
+  color: #029fe8 !important;
 }
 
 #skill-chart {
@@ -46,7 +51,11 @@ code {
   padding-right: 125px;
 }
 
-#contact-content {
+#footer-container {
+  background-color: #0e0d0d;
+}
+
+#contact {
   padding-right: 100px;
 }
 
@@ -67,7 +76,7 @@ input:-webkit-autofill:hover {
 }
 
 @media screen and (max-width: 1055px) {
-  #contact-content {
+  #contact {
     padding-right: 20px;
   }
 }
@@ -86,7 +95,29 @@ input:-webkit-autofill:hover {
   }
 
 }
-/* 
-@media screen and (max-width: 382px) {
 
-} */
+/* Icon Hovering */
+#facebook-icon:hover {
+  color: #1977f3;
+  transition: 0.2s ease-in-out;
+}
+
+#instagram-icon:hover {
+  color: #ab348e;
+  transition: 0.2s ease-in-out;
+}
+
+#wechat-icon:hover {
+  color: #00c924;
+  transition: 0.2s ease-in-out;
+}
+
+#linkedin-icon:hover {
+  color: #0274b3;
+  transition: 0.2s ease-in-out; 
+}
+
+#github-icon:hover {
+  color: #80278f;
+  transition: 0.2s ease-in-out;
+}

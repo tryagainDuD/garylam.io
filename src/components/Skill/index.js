@@ -40,7 +40,7 @@ class Skill extends Component {
         // Get the elements that need to resize by media queries
         // bigSlogan is also for adding the typing animation
         var chartCol = document.getElementById('chart-col')
-        var skillText = document.getElementById('skill')
+        var skillText = document.getElementById('skills')
         var varySpan = document.getElementById('vary-span')
         var skillFlexContainer = document.getElementById('skill-flex-chart-container')
 
@@ -127,7 +127,7 @@ class Skill extends Component {
                 <Container fluid id="skill-container">
                     <Row>
                         <Col xs={1} sm={1} md={1} lg={1}></Col>
-                        <Col xs={5} sm={5} md={5} lg={5} id="skill">
+                        <Col xs={5} sm={5} md={5} lg={5} id="skills">
                             <SkillTitle>Skills</SkillTitle>
                             <SkillContent>
                                 The main area I feel condfident in is front-end development. 

@@ -92,7 +92,7 @@ class Contact extends Component {
     componentDidMount() {
         // Resize
         var emptyCol = document.getElementById('contact-empty-col')
-        var contactContentCol = document.getElementById('contact-content')
+        var contactContentCol = document.getElementById('contact')
         
         if (window.matchMedia("(max-width: 576px)").matches) {
             emptyCol.className = ""
@@ -130,7 +130,7 @@ class Contact extends Component {
             <Container fluid id="contact-container">
                 <Row style={{height: 100 + '%'}}>
                     <Col xs={1} sm={1} md={1} lg={1} id="contact-empty-col" />
-                    <Col xs={11} sm={11} md={11} lg={11} id="contact-content">
+                    <Col xs={11} sm={11} md={11} lg={11} id="contact">
                         <ContactTitle>Contact Me</ContactTitle>
                         <ContactText>
                             I'm interested in any opportunites related to software development.

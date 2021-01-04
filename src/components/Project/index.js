@@ -34,12 +34,12 @@ class Project extends Component {
     componentDidMount() {
         var arrayElements = document.getElementById('array-bar-container').getElementsByTagName('a')
         arrayElements[0].className += ' active-index';
-        var projectContainers = document.getElementsByClassName('project-container')
+        var projectContainers = document.getElementsByClassName('project')
         projectContainers[0].style.display = 'block'
 
         // Resize
         var emptyCol = document.getElementById('project-empty-col')
-        var projectContentCol = document.getElementById('project-content')
+        var projectContentCol = document.getElementById('projects')
         
         if (window.matchMedia("(max-width: 576px)").matches) {
             emptyCol.className = ""
@@ -76,7 +76,7 @@ class Project extends Component {
             // If selected the same element
             if (selectedIndex === this.state.showingProjectIndex) { return }
 
-            var projectContainers = document.getElementsByClassName('project-container')
+            var projectContainers = document.getElementsByClassName('project')
             var displayedElement = projectContainers[this.state.showingProjectIndex]
             var willShowElement = projectContainers[selectedIndex]
             displayedElement.animate([
@@ -125,7 +125,7 @@ class Project extends Component {
         )
 
         const projects = projectData.map((project) => 
-            <ProjectContainer className="project-container" key={project.title}>
+            <ProjectContainer className="project" key={project.title}>
                 <ProjectSmallTitle>{ project.title }</ProjectSmallTitle>
                 <ProjectContent>{ project.description }</ProjectContent>
                 <ProjectVideoContainer>
@@ -138,7 +138,7 @@ class Project extends Component {
             <Container fluid id="project-container">
                 <Row>
                     <Col xs={1} sm={1} md={1} lg={1} id="project-empty-col"></Col>
-                    <Col xs={11} sm={11} md={11} lg={11} id="project-content">
+                    <Col xs={11} sm={11} md={11} lg={11} id="projects">
                         <ProjectTitle>Project</ProjectTitle>
                         <ArrayBarContainer id="array-bar-container">
                             <SquareBracket isLeftBracket={this.state.isLeftBracket}>[</SquareBracket>

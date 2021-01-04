@@ -49,6 +49,10 @@ export const NavLogo = styled(LinkR)`
         text-decoration: none;
         color: #fff;
     }
+
+    @media screen and (max-width: 768px) {
+        padding-left: 10px;
+    }
 `;
 
 // Icons
@@ -69,7 +73,7 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
     width: 100%;
     height: 70%;
-    padding: 300px 0px 0px 23px;
+    padding: 300px 1px 0px 23px;
     display: block;
     align-items: center;
     list-style: none;
@@ -94,6 +98,7 @@ export const NavLink = styled(LinkS)`
     cursor: pointer;
     font-weight: bold;
     font-size: 1.67rem;
+    box-sizing: border-box;
 
     &:hover {
         color: #029fe8;

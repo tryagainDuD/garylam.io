@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import $ from 'jquery'
 import Typing from 'react-typing-animation'
 import {
     Container,
@@ -13,10 +14,12 @@ import {
     Code
 } from './AboutElements'
 import Button from '../Button'
+import PDF from '../../documents/resume.pdf'
 
 class About extends Component {
 
     componentDidMount() {
+
         // Get the elements that need to resize by media queries
         // bigSlogan is also for adding the typing animation
         var codeCol = document.getElementById('code-col')
@@ -47,31 +50,53 @@ class About extends Component {
         window.matchMedia("(min-width: 1200px)").addListener(handleMinWidth);
         window.matchMedia("(max-width: 768px)").addListener(handleMaxWidth);
         window.matchMedia("(max-width: 1200px)").addListener(handleMaxWidth);
+
+        // Redirect to resume page
+        $('#resume-btn').on('click', function() {
+            window.open(window.location.href + "resume.pdf", '_blank')
+        })
+
+        // const isScrolledToThisPage = function() {
+        //     var docViewTop = $(window).scrollTop();
+        //     var docViewBottom = docViewTop + $(window).height();
+        //     console.log('View top: ' + docViewTop)
+        //     console.log('View bottom: ' + docViewBottom)
+
+        //     var aboutContainer = $('#about-container')
+        //     var elemTop = $(aboutContainer).offset().top;
+        //     var elemBottom = elemTop + $(aboutContainer).height();
+        //     console.log('Container top: ' + elemTop)
+        //     console.log('Container bottom: ' + elemBottom)
+
+        //     return elemBottom <= docViewBottom && elemTop >= docViewTop;
+        // }
+
+        // $(window).scroll(function() {
+        //     if (isScrolledToThisPage()) {
+        //         document.getElementById('code-content').style.display = "inline-block" 
+        //     }
+        // })
     }
 
     render() {
         return (
-            <Container fluid>
+            <Container fluid id="about-container">
                 <Row>
                     <Col xs={1} sm={1} md={1} lg={1} />
                     <Col xs={5} sm={5} md={5} lg={5} id="about">
                         <AboutTitle>About Me</AboutTitle>
                         <AboutContent>
                             Passion in learning and coding, thinks continue to learn and explore new things is essential
-                            in order to stay in tune with the lastest update of the 
-                            working environment and create a quality product as a software developer.
-                            <br />
-                            {/* By finishing the Bachelor of Information Technology in the University of South
-                            Australia,  it built up my academic foundation in software development but that's definitly not enough. */}
+                            in order to create a quality product as a software developer.
                             <br />
                             I'm eager to learn, to gain practical experience from development process, to engage in projects and
                             ultimately, build something that can inspire people a new way to live.
                         </AboutContent>
-                        <Button text={"resume"} padding={"23px 160px"} />
+                        <Button id={"resume-btn"} text={"resume"} padding={"23px 160px"} />
                     </Col>
                     <Col xs={6} sm={6} md={6} lg={6} id="code-col">
-                        <ProgramWrapper>
-                            <Typing speed={0} cursorClassName="text-white">
+                        <ProgramWrapper id="code-content">
+                            <Typing speed={0.1} cursorClassName="text-white">
                                 <FileName>MySimpleLife.java</FileName>
                                 <Code>
                                     public static void main(String args[]) <span>{String.fromCharCode(123)}</span><br />

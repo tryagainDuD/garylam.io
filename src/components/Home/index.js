@@ -52,7 +52,7 @@ class Home extends Component {
 
     render() {
         return (
-            <Container fluid>
+            <Container fluid id="home-container">
                 <Row>
                     <Col xs={1} sm={1} md={1} lg={1}></Col>
                     <Col xs={6} sm={6} md={6} lg={6} id="home">
@@ -62,10 +62,11 @@ class Home extends Component {
                             I'm <SpecialLetter>G</SpecialLetter>ary <SpecialLetter>L</SpecialLetter>am
                         </HomeContent>
                         <Description>// Graduated software developer, passion in learning & coding</Description>
-                        <Button text="contact" padding="23px 160px"/>
+                        <Button to="contact-container" text={"contact"} padding={"23px 160px"}
+                            smooth={true} duration={500} spy={true}/>
                     </Col>
                     <Col xs={4} sm={4} md={4} lg={4} id="big-slogan-col">
-                        <Typing speed={40} cursorClassName="text-white">
+                        <Typing speed={0} cursorClassName="text-white">
                             <Typing.Delay ms={1000} />
                             <BigSlogan>"BE HUMBLE, BE HUNGRY."</BigSlogan>
                         </Typing>

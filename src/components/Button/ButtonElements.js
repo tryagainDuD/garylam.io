@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 
-export const Btn = styled.a`
+export const Btn = styled(Link)`
     position: relative;
     display: inline-block;
     font: bold 1.2rem "Montserrat";

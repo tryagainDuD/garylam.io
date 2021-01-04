@@ -13,7 +13,7 @@ export const projectData = [
     // The application retains the functionality to store and manage various experimental data, coating
     // sample metadata, data visualization etc. 
     {
-        title: "Asset Manager",
+        title: "Youtube Video Comments Exporter",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut" + 
         "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris" +  
         "nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit" + 

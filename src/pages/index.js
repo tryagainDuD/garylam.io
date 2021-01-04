@@ -6,7 +6,9 @@ import About from '../components/About'
 import Skill from '../components/Skill'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
-import { ContentContainer } from './MasterElements'
+import Footer from '../components/Footer'
+import { ContentContainer, BlankArea } from './MasterElements'
+import { Container } from 'react-bootstrap'
 
 const Master = () => {
 
@@ -28,6 +30,8 @@ const Master = () => {
                 <Skill />
                 <Project />
                 <Contact />
+                <BlankArea><Container fluid /></BlankArea>
+                <Footer />
             </ContentContainer>
         </>
     )
