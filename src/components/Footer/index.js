@@ -52,7 +52,7 @@ class Footer extends Component {
                                             target="_blank" id="instagram-icon">
                                     <GrInstagram />
                                 </SocialLink>
-                                <SocialLink href="https://www.instagram.com/ww_gary_ww/" 
+                                <SocialLink href={ QRCode }
                                             target="_blank" id="wechat-icon">
                                     <SiWechat />
                                 </SocialLink>

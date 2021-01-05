@@ -24,7 +24,7 @@ export const ContentContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         padding-top: 50px;
-        height: 60%;
+        height: 70%;
     }
 `;
 
@@ -45,7 +45,7 @@ export const FrameworkText = styled.div`
     display: block;
 
     @media screen and (max-width: 768px) {
-        font-size: 0.9rem;
+        font-size: 0.5rem;
     }
 `;
 
@@ -59,7 +59,7 @@ export const FrameworkLogo = styled.img`
     }
 
     @media screen and (max-width: 768px) {
-        height: 70px;
+        height: 65px;
     }
 `;
 
@@ -70,6 +70,6 @@ export const SocialLink = styled.a`
     cursor: pointer;
 
     @media screen and (max-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 `;
