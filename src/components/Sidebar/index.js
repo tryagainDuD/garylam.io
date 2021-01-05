@@ -21,23 +21,23 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to="home-container" onClick={toggle} 
-                        title="About" offset={80} smooth={true} duration={350} spy={true}>
+                        title="About" offset={-80} smooth={true} duration={350} spy={true}>
                         <AiOutlineHome className="icon"/>Home
                     </SidebarLink>
                     <SidebarLink to="about-container" onClick={toggle} 
-                        title="About" offset={80} smooth={true} duration={350} spy={true}>
+                        title="About" offset={-80} smooth={true} duration={350} spy={true}>
                         <BsPerson className="icon"/>About
                     </SidebarLink>
                     <SidebarLink to="skill-container" onClick={toggle} 
-                        title="About" offset={80} smooth={true} duration={350} spy={true}>
+                        title="About" offset={-80} smooth={true} duration={350} spy={true}>
                         <RiSettingsLine className="icon"/>Skills
                     </SidebarLink>
                     <SidebarLink to="project-container" onClick={toggle} 
-                        title="About" offset={80} smooth={true} duration={350} spy={true}>
+                        title="About" offset={-80} smooth={true} duration={350} spy={true}>
                         <AiOutlineFolderOpen className="icon"/>Projects
                     </SidebarLink>
                     <SidebarLink to="contact-container" onClick={toggle} 
-                        title="About" offset={80} smooth={true} duration={350} spy={true}>
+                        title="About" offset={-80} smooth={true} duration={350} spy={true}>
                         <BiMailSend className="icon"/>Contact
                     </SidebarLink>
                 </SidebarMenu>

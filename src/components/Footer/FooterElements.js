@@ -71,5 +71,7 @@ export const SocialLink = styled.a`
 
     @media screen and (max-width: 768px) {
         font-size: 1.2rem;
+        margin-right: 6px;
+        
     }
 `;

@@ -42,7 +42,7 @@ class Footer extends Component {
                                 <FrameworkLogo src={ logo } id="react-logo" alt="React Logo" />
                             </ContentContainer>
                         </Col>
-                        <Col xs={3} sm={3} md={3} lg={3}>
+                        <Col id="social-links-col" xs={3} sm={3} md={3} lg={3}>
                             <ContentContainer>
                                 <SocialLink href="https://www.facebook.com/profile.php?id=100000561124616" 
                                             target="_blank" id="facebook-icon">

@@ -69,6 +69,11 @@ code {
   min-height: 82px;
 }
 
+#social-links-col {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover {
   -webkit-box-shadow: 0 0 0 100px #292929 inset !important;
