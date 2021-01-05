@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5908aae.chunk.css",
-    "main.js": "/static/js/main.9748da0e.chunk.js",
-    "main.js.map": "/static/js/main.9748da0e.chunk.js.map",
+    "main.css": "/static/css/main.fa087f4d.chunk.css",
+    "main.js": "/static/js/main.2286cf8d.chunk.js",
+    "main.js.map": "/static/js/main.2286cf8d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e965b6c5.js",
     "runtime-main.js.map": "/static/js/runtime-main.e965b6c5.js.map",
     "static/js/2.8b27408f.chunk.js": "/static/js/2.8b27408f.chunk.js",
@@ -14,7 +14,7 @@
     "lamy.mp4": "/lamy.mp4",
     "resume.pdf": "/resume.pdf",
     "shirakami_fubuki.mp4": "/shirakami_fubuki.mp4",
-    "static/css/main.d5908aae.chunk.css.map": "/static/css/main.d5908aae.chunk.css.map",
+    "static/css/main.fa087f4d.chunk.css.map": "/static/css/main.fa087f4d.chunk.css.map",
     "static/js/2.8b27408f.chunk.js.LICENSE.txt": "/static/js/2.8b27408f.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
     "static/media/wechat_qrcode.002951f0.png": "/static/media/wechat_qrcode.002951f0.png"
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.e965b6c5.js",
     "static/js/2.8b27408f.chunk.js",
-    "static/css/main.d5908aae.chunk.css",
-    "static/js/main.9748da0e.chunk.js"
+    "static/css/main.fa087f4d.chunk.css",
+    "static/js/main.2286cf8d.chunk.js"
   ]
 }
