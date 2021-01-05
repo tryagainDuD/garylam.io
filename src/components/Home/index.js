@@ -62,7 +62,7 @@ class Home extends Component {
                             I'm <SpecialLetter>G</SpecialLetter>ary <SpecialLetter>L</SpecialLetter>am
                         </HomeContent>
                         <Description>// Graduated software developer, passion in learning & coding</Description>
-                        <Button to="contact-container" text={"contact"} padding={"23px 160px"}
+                        <Button to="contact-container" text={"contact"} padding={"23px 160px"} offset={-80}
                             smooth={true} duration={500} spy={true}/>
                     </Col>
                     <Col xs={4} sm={4} md={4} lg={4} id="big-slogan-col">
