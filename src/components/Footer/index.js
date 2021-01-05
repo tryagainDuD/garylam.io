@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import logo from '../../logo.svg'
-import { GrInstagram, GrFacebook, GrLinkedin, GrGithub } from 'react-icons/gr'
+import { GrInstagram, GrFacebook, GrMail, GrGithub } from 'react-icons/gr'
 import { SiWechat } from 'react-icons/si'
 import {
     Container,
@@ -56,8 +56,8 @@ class Footer extends Component {
                                             target="_blank" id="wechat-icon">
                                     <SiWechat />
                                 </SocialLink>
-                                <SocialLink href={ QRCode }  id="linkedin-icon">
-                                    <GrLinkedin />
+                                <SocialLink href="mailto:garylamofficial@gmail.com" title="mailto:garylamofficial@gmail.com" target="_blank" id="mail-icon">
+                                    <GrMail />
                                 </SocialLink>
                                 <SocialLink href="https://github.com/garylam09632" target="_blank" id="github-icon">
                                     <GrGithub />
