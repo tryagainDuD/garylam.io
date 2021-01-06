@@ -30,7 +30,7 @@ const Master = () => {
                 <Skill />
                 <Project />
                 <Contact />
-                <BlankArea><Container fluid /></BlankArea>
+                <BlankArea height={"150px"}><Container fluid /></BlankArea>
                 <Footer />
             </ContentContainer>
         </>

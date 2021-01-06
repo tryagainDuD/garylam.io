@@ -14,7 +14,6 @@ import {
     Code
 } from './AboutElements'
 import Button from '../Button'
-import PDF from '../../documents/resume.pdf'
 
 class About extends Component {
 

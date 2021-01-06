@@ -32,6 +32,7 @@ code {
 .container-fluid {
   background: #101111;
   height: 100%;
+  display: block;
 }
 
 .active {

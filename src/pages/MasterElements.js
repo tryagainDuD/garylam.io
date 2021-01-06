@@ -16,5 +16,5 @@ export const ContentContainer = styled.div`
 
 export const BlankArea = styled.div`
     width: 100%;
-    height: 150px;
+    height: ${ props => props.height };
 `

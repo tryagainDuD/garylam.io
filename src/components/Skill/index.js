@@ -42,6 +42,7 @@ class Skill extends Component {
         var chartCol = document.getElementById('chart-col')
         var skillText = document.getElementById('skills')
         var varySpan = document.getElementById('vary-span')
+        var chartContainer = document.getElementById('chart-container')
         var skillFlexContainer = document.getElementById('skill-flex-chart-container')
 
         if (window.matchMedia("(max-width: 768px)").matches) {
@@ -53,6 +54,7 @@ class Skill extends Component {
             skillText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
 
             varySpan.innerText = "below"
+            chartContainer.style.display = "none"
             skillFlexContainer.style.display = "block"
         }
         else if (window.matchMedia("(min-width: 1500px)").matches) {
@@ -60,6 +62,7 @@ class Skill extends Component {
             skillText.className = "col-xs-5 col-sm-5 col-md-5 col-lg-5"
 
             varySpan.innerText = "on the right"
+            chartContainer.style.display = "block"
             skillFlexContainer.style.display = "none"
         }
 
@@ -76,6 +79,7 @@ class Skill extends Component {
                 skillText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
 
                 varySpan.innerText = "below"
+                chartContainer.style.display = "none"
                 skillFlexContainer.style.display = "block"
             }
         }
@@ -85,6 +89,7 @@ class Skill extends Component {
                 skillText.className = "col-xs-5 col-sm-5 col-md-5 col-lg-5"
 
                 varySpan.innerText = "on the right"
+                chartContainer.style.display = "block"
                 skillFlexContainer.style.display = "none"
             }
         }
