@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.0f05c0b8.chunk.css",
-    "main.js": "/static/js/main.c2db152c.chunk.js",
-    "main.js.map": "/static/js/main.c2db152c.chunk.js.map",
+    "main.css": "/static/css/main.c314d2f7.chunk.css",
+    "main.js": "/static/js/main.85b92fc4.chunk.js",
+    "main.js.map": "/static/js/main.85b92fc4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.e965b6c5.js",
     "runtime-main.js.map": "/static/js/runtime-main.e965b6c5.js.map",
     "static/js/2.4548e948.chunk.js": "/static/js/2.4548e948.chunk.js",
@@ -12,9 +12,8 @@
     "edms-demo.mp4": "/edms-demo.mp4",
     "index.html": "/index.html",
     "lamy.mp4": "/lamy.mp4",
-    "resume.pdf": "/resume.pdf",
     "shirakami_fubuki.mp4": "/shirakami_fubuki.mp4",
-    "static/css/main.0f05c0b8.chunk.css.map": "/static/css/main.0f05c0b8.chunk.css.map",
+    "static/css/main.c314d2f7.chunk.css.map": "/static/css/main.c314d2f7.chunk.css.map",
     "static/js/2.4548e948.chunk.js.LICENSE.txt": "/static/js/2.4548e948.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg",
     "static/media/wechat_qrcode.002951f0.png": "/static/media/wechat_qrcode.002951f0.png"
@@ -22,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.e965b6c5.js",
     "static/js/2.4548e948.chunk.js",
-    "static/css/main.0f05c0b8.chunk.css",
-    "static/js/main.c2db152c.chunk.js"
+    "static/css/main.c314d2f7.chunk.css",
+    "static/js/main.85b92fc4.chunk.js"
   ]
 }
