@@ -44,6 +44,10 @@ export const SidebarMenu = styled.div`
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 60px);
     }
+
+    @media (orientation: landscape) {
+        grid-template-rows: repeat(6, 50px);
+    }
 `;
 
 export const SidebarLink = styled(LinkS)`
@@ -69,5 +73,9 @@ export const SidebarLink = styled(LinkS)`
 
     @media screen and (max-width: 768px) {
         font-size: 2rem;
+    }
+
+    @media (orientation: landscape) {
+        font-size: 1.5rem;
     }
 `;

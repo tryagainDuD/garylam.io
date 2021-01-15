@@ -127,7 +127,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <Container fluid id="contact-container">
+            <Container fluid id="contact-container" className="containers">
                 <Row style={{height: 100 + '%'}}>
                     <Col xs={1} sm={1} md={1} lg={1} id="contact-empty-col" />
                     <Col xs={11} sm={11} md={11} lg={11} id="contact">

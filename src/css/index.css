@@ -29,10 +29,16 @@ code {
 }
 
 /* Page CSS */
-.container-fluid {
+.containers, .container-fluid {
   background: #101111;
   height: 100%;
   display: block;
+}
+
+@media (orientation: landscape) {
+  .containers {
+    height: 937px;
+  }
 }
 
 .active {
@@ -100,12 +106,6 @@ input:-webkit-autofill:hover {
     padding-right: 20px;
   }
 
-}
-
-@media (orientation: landscape) {
-  .container-fluid {
-    height: 937px;
-  }
 }
 
 /* Icon Hovering */

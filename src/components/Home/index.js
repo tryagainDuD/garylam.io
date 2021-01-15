@@ -52,7 +52,7 @@ class Home extends Component {
 
     render() {
         return (
-            <Container fluid id="home-container">
+            <Container fluid id="home-container" className="containers">
                 <Row>
                     <Col xs={1} sm={1} md={1} lg={1}></Col>
                     <Col xs={6} sm={6} md={6} lg={6} id="home">

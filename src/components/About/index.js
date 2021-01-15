@@ -79,7 +79,7 @@ class About extends Component {
 
     render() {
         return (
-            <Container fluid id="about-container">
+            <Container fluid id="about-container" className="containers">
                 <Row>
                     <Col xs={1} sm={1} md={1} lg={1} />
                     <Col xs={5} sm={5} md={5} lg={5} id="about">
