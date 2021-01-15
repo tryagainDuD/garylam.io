@@ -102,6 +102,12 @@ input:-webkit-autofill:hover {
 
 }
 
+@media (orientation: landscape) {
+  .container-fluid {
+    height: 937px;
+  }
+}
+
 /* Icon Hovering */
 #facebook-icon:hover {
   color: #1977f3;
