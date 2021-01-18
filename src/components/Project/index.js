@@ -110,12 +110,7 @@ class Project extends Component {
 
         const arrayIndex = projectData.map((project, index) => 
             {
-                if (index !== projectData.length - 1) 
-                    return <span key={project.title}>
-                                <ArrayIndex onClick={indexOnClick}>{ index + 1 }</ArrayIndex>
-                                <Comma>,</Comma>
-                            </span>
-                else if (index === 0) 
+                if (index !== projectData.length - 1)
                     return <span key={project.title}>
                                 <ArrayIndex onClick={indexOnClick}>{ index + 1 }</ArrayIndex>
                                 <Comma>,</Comma>
