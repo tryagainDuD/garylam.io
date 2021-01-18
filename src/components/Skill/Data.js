@@ -82,11 +82,12 @@ export const dotsData = [
         description: "Same as CSS. Not a master on design but \nI can achieve fancy design by bootstrap & css."
     },
     {
-        title: "VB.NET",
+        title: "AngularJS ",
         x: 30,
-        y: 39,
+        y: 65,
         color: "rgb(55, 177, 44)",
-        description: "Knowing the basic syntax & logic operation."
+        description: "With experience on data binding & MVC in AngularJS. \n"+ 
+                        "Able to learn and develop my knowledge quickly on AngularJS."
     },
     {
         title: "ASP.NET",
