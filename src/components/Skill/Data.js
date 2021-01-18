@@ -83,7 +83,7 @@ export const dotsData = [
     },
     {
         title: "AngularJS ",
-        x: 30,
+        x: 27,
         y: 65,
         color: "rgb(55, 177, 44)",
         description: "With experience on data binding & MVC in AngularJS. \n"+ 
