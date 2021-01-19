@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const AboutTitle = styled.div`
-    padding-top: 275px;
+    padding-top: 30vh;
     color: #029fe8;
     font-size: 4.0rem;
     font-weight: bold;

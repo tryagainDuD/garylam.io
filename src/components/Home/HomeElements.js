@@ -34,12 +34,11 @@ export const HomeContent = styled.div`
 export const Slogan = styled.div`
     color: #9C9B9A;
     font: 500 1.2rem "Consolas";
-    padding: 185px 0px 140px 0px;
+    padding: 20vh 0px 140px 0px;
     transition: 0.3s ease-in-out;
 
     @media screen and (max-width: 1200px) {
         height: 50px;
-        padding-top: 210px;
         font-size: 1.1rem;
     }
 
@@ -66,10 +65,6 @@ export const BigSlogan = styled.div`
         transform: translateX(-20px);
         padding-top: 180px;
         font-size: 6rem;
-    }
-
-    @media screen and (max-width: 1500px) {
-        display: none;
     }
 
     @media screen and (max-width: 1200px) {

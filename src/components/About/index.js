@@ -37,18 +37,17 @@ class About extends Component {
                 aboutText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
             }
         }
-        if (window.matchMedia("(max-width: 768px)").matches) {
+        if (window.matchMedia("(max-width: 1500px)").matches) {
             codeCol.className = "col-xs-1 col-sm-1 col-md-1 col-lg-1"
             aboutText.className = "col-xs-10 col-sm-10 col-md-10 col-lg-10"
         }
-        else if (window.matchMedia("(min-width: 1200px)")) {
+        else if (window.matchMedia("(min-width: 1500px)").matches) {
             codeCol.className = "col-xs-6 col-sm-6 col-md-6 col-lg-6"
             aboutText.className = "col-xs-5 col-sm-5 col-md-5 col-lg-5"
         }
 
-        window.matchMedia("(min-width: 1200px)").addListener(handleMinWidth);
-        window.matchMedia("(max-width: 768px)").addListener(handleMaxWidth);
-        window.matchMedia("(max-width: 1200px)").addListener(handleMaxWidth);
+        window.matchMedia("(min-width: 1500px)").addListener(handleMinWidth);
+        window.matchMedia("(max-width: 1500px)").addListener(handleMaxWidth);
 
         // Redirect to resume page
         $('#resume-btn').on('click', function() {
