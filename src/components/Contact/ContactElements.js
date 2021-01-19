@@ -23,7 +23,7 @@ const popup = keyframes`
 `
 
 export const ContactTitle = styled.div`
-    padding-top: 110px;
+    padding-top: 10vh;
     color: #029fe8;
     font-size: 4.0rem;
     font-weight: bold;

@@ -63,7 +63,7 @@ export const BigSlogan = styled.div`
 
     @media screen and (max-width: 1800px) {
         transform: translateX(-20px);
-        padding-top: 180px;
+        padding-top: 16vh;
         font-size: 6rem;
     }
 
