@@ -43,7 +43,7 @@ export const dotsData = [
         description: "Able to apply all the different tools arounds to achieve goals by JS."
     },
     {
-        title: "React",
+        title: "ReactJS",
         x: 43,
         y: 74,
         color: "rgb(65, 156, 156)",
@@ -82,12 +82,11 @@ export const dotsData = [
         description: "Same as CSS. Not a master on design but \nI can achieve fancy design by bootstrap & css."
     },
     {
-        title: "AngularJS ",
+        title: "NodeJS",
         x: 27,
-        y: 65,
+        y: 61,
         color: "rgb(55, 177, 44)",
-        description: "With experience on data binding & MVC in AngularJS. \n"+ 
-                        "Able to learn and develop my knowledge quickly on AngularJS."
+        description: "With experience of building a simple blog page with NodeJS."
     },
     {
         title: "ASP.NET",
